@@ -23,6 +23,7 @@ export function* mapBasePaths(
   const root = process.cwd();
   const sourcePath = path.resolve(root, `${basePath}/${source}`);
 
+  console.log('test')
   for (const target of targetLocales) {
     const targetPath = path.resolve(root, `${basePath}/${target}`);
 
